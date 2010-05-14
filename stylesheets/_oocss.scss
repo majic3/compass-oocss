@@ -1,0 +1,137 @@
+// This is your framework's main stylesheet. Use it to import all default modules.
+
+
+// Site
+$site_width: 100% !default;
+$site_bg_color: white !default;
+
+// body
+$body_color: black !default;
+$body_font_family: unquote("arial,helvetica,clean,sans-serif") !default;
+$body_font_familyserif: serif !default;
+$body_font_size: 13px !default;
+$body_line_height: 1.5em !default;
+
+$title_color: black !default;
+$title_font_family: $body_font_familyserif !default;
+$title_font_size: 14px !default;
+
+$link_color: #336699 !default;
+$link_hover_color: #aa0000 !default;
+
+// User navigation
+$user_nav_color: inherit !default;
+$user_nav_bg_color: transparent !default;
+$user_nav_font_family: inherit !default;
+$user_nav_font_size: inherit !default;
+
+$user_nav_link_color: inherit !default;
+$user_nav_link_hover_color: inherit !default;
+
+// Header
+$header_color: inherit !default;
+$header_bg_color: transparent !default;
+$header_font_family: inherit !default;
+$header_font_size: inherit !default;
+
+// Navigation
+$nav_color: inherit !default;
+$nav_bg_color: transparent !default;
+$nav_font_family: inherit !default;
+$nav_font_size: inherit !default;
+
+$nav_link_color: inherit !default;
+$nav_link_hover_color: inherit !default;
+
+// Middle
+$middle_bg_color: inherit !default;
+
+// Footer
+$footer_color: inherit !default;
+$footer_bg_color: transparent !default;
+$footer_font_family: inherit !default;
+$footer_font_size: inherit !default;
+
+$footer_link_color: inherit !default;
+$footer_link_hover_color: inherit !default;
+
+// Main
+$main_color: inherit !default;
+$main_bg_color: transparent !default;
+$main_font_family: inherit !default;
+$main_font_size: inherit !default;
+
+$main_title_color: inherit !default;
+$main_title_bg_color: transparent !default;
+$main_title_font_family: inherit !default;
+$main_title_font_size: inherit !default;
+$main_title_font_weight: inherit !default;
+
+$main_link_color: inherit !default;
+$main_link_hover_color: inherit !default;
+
+// Sidebar
+$sb_color: inherit !default;
+$sb_bg_color: transparent !default;
+$sb_font_family: inherit !default;
+$sb_font_size: inherit !default;
+
+$sb_title_color: inherit !default;
+$sb_title_bg_color: transparent !default;
+$sb_title_font_family: inherit !default;
+$sb_title_font_size: inherit !default;
+
+$sb_sub_title_color: inherit !default;
+$sb_sub_title_bg_color: transparent !default;
+$sb_sub_title_font_family: inherit !default;
+$sb_sub_title_font_size: inherit !default;
+
+$sb_link_color: inherit !default;
+$sb_link_hover_color: inherit !default;
+
+$sb_graph_color: inherit !default;
+
+// Entry
+$entry_bg_color: transparent !default;
+
+// Entry title
+$entry_title_color: inherit !default;
+$entry_title_bg_color: transparent !default;
+$entry_title_font_family: inherit !default;
+$entry_title_font_size: inherit !default;
+$entry_title_font_weight: inherit !default;
+
+// Entry meta
+$entry_meta_color: inherit !default;
+$entry_meta_font_family: inherit !default;
+$entry_meta_font_size: inherit !default;
+$entry_meta_font_weight: inherit !default;
+
+$entry_meta_link_color: inherit !default;
+$entry_meta_link_hover_color: inherit !default;
+
+// Entry content
+$entry_content_color: inherit !default;
+$entry_content_font_family: inherit !default;
+$entry_content_font_size: inherit !default;
+$entry_content_font_weight: inherit !default;
+
+$entry_content_link_color: inherit !default;
+$entry_content_link_hover_color: inherit !default;
+
+// Entry footer
+$entry_footer_color: inherit !default;
+$entry_footer_bg_color: transparent !default;
+$entry_footer_font_family: inherit !default;
+$entry_footer_font_size: inherit !default;
+$entry_footer_font_weight: inherit !default;
+
+$entry_footer_link_color: inherit !default;
+$entry_footer_link_hover_color: inherit !default;
+
+@mixin current {
+  background: #eabefb;
+  color: #235237; }
+
+@import "oocss/core.scss";
+@import "oocss/plugins.scss";

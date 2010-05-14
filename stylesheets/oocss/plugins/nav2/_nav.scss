@@ -1,0 +1,46 @@
+.ver ul {
+  right: -100%;
+  top: 0; }
+
+.nav {
+  ul {
+    visibility: hidden;
+    display: none; }
+  li {
+    &:hover>ul, &:hover {
+      visibility: visible;
+      margin-left: 0; }
+    &:hover>.hor {
+      display: inline-block; } } }
+
+.hor li, ul.nav {
+  display: inline-block; }
+
+.nav li:hover>.ver, .ver li {
+  display: block; }
+
+ul.nav {
+  position: relative; }
+
+.nav {
+  ul>li {
+    position: relative; }
+  ul {
+    position: absolute; }
+  li:hover>.hor {
+    display: block; } }
+
+.tree {
+  ul {
+    height: auto;
+    visibility: visible;
+    display: block; }
+  li {
+    float: none;
+    display: block;
+    li {
+      float: none;
+      display: block; }
+    ul {
+      position: static;
+      margin-left: 1.2em; } } }

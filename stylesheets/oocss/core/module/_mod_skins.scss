@@ -1,0 +1,450 @@
+//*
+//	* **************** BLOCK SKINS ***************** *
+//	* ====== Contour blocks ====== *
+//	* remove background-image:" to default to square corners for IE */
+
+@mixin simple($name: simple) {
+	/* ----- simple (extends mod) ----- */
+	.#{$name} {
+		.inner {
+			border: 1px solid #D7D7D7;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			border-radius: 7px; }
+		b {
+			*background-image: url(skin/simple_corners.png); } } }
+
+@mixin basic($name: basic) {
+	/* ----- basic (extends mod) ----- */
+	.#{$name} {
+		.inner {
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			border-radius: 7px; }
+		b {
+			*background-image: url(skin/round.png); } } }
+
+@mixin simpleExt($name: simpleExt) {
+	/* ----- simpleExt (extends mod) ----- */
+	.#{$name} {
+		border: 1px solid #c7c7c7;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		border-radius: 7px;
+		.inner {
+			border: 1px solid #c7c7c7;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			border-radius: 7px;
+			border-color: #fff;
+			border-width: 4px;
+			background-color: #e2e2e2; }
+		b {
+			*background-image: url(skin/simple_extended.png); }
+		.tl {
+			left: -1px;
+			top: -1px;
+			height: 12px;
+			width: 12px; }
+		.tr {
+			right: -1px;
+			top: -1px;
+			height: 12px;
+			width: 12px; }
+		.bl {
+			left: -1px;
+			bottom: -1px;
+			height: 12px;
+			width: 12px;
+			margin-top: -12px; }
+		.br {
+			right: -1px;
+			bottom: -1px;
+			height: 12px;
+			width: 12px;
+			margin-top: -12px; } } }
+
+@mixin me($name: me) {
+	/* ----- me (extends mod) use for my comments ----- */
+	.#{$name} {
+		border: 1px solid #909090;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		.inner {
+			border: 1px solid #909090;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			border-color: #d76a84; }
+		b {
+			*background-image: url(skin/me.png); }
+		.tl {
+			left: -1px;
+			top: -1px; }
+		.tr {
+			right: -1px;
+			top: -1px; }
+		.bl {
+			left: -1px;
+			bottom: -1px; }
+		.br {
+			right: -1px;
+			bottom: -1px; } } }
+
+
+@mixin noted($name: noted) {
+	/* ----- noted (extends mod) ----- */
+	.#{$name} {
+		border: 1px solid #c2c2c2;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		.inner {
+			border: 1px solid #c2c2c2;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			border-color: #eded68; }
+		b {
+			*background-image: url(skin/noted.png); }
+		.tl {
+			left: -1px;
+			top: -1px; }
+		.tr {
+			right: -1px;
+			top: -1px; }
+		.bl {
+			left: -1px;
+			bottom: -1px; }
+		.br {
+			right: -1px;
+			bottom: -1px; } } }
+
+@mixin grab($name: grab) {
+	/* ----- grab (extends mod) ----- */
+	.#{$name} {
+		.inner {
+				border: 3px solid #00477a;
+				border-bottom-width: 10px; }
+			b {
+				background-image: url(skin/grab.png); }
+			.bl, .br {
+				height: 16px;
+				/*if height is set, margin set*/
+				margin-top: -16px; } } }
+
+//*
+//	can't be done w border radius */
+
+//*
+//	.grab .tl, .grab .tr{height:10px; width:10px;} */
+	
+
+@mixin faq($name: faq) {
+	/* ----- faq (extends mod) ----- */
+	.#{$name} {
+  .inner {
+			border: 3px solid #b20029;
+			border-bottom-width: 10px; }
+		b {
+			background-image: url(skin/faq.png); }
+		.bl, .br {
+			height: 16px;
+			/*if height is set, margin set*/
+			margin-top: -16px; } } }
+
+//*
+//	can't be done w border radius */
+
+
+@mixin onlinestore($name: onlinestore) {
+	/* ----- onlinestore (extends mod) ----- */
+	.#{$name} {
+  .inner {
+			border: 3px solid #9a9800;
+			border-bottom-width: 10px; }
+		b {
+			background-image: url(skin/store.png); }
+		.bl, .br {
+			height: 16px;
+			/*if height is set, margin set*/
+			margin-top: -16px; } } }
+
+//*
+//	can't be done w border radius */
+
+@mixin about($name: about) {
+	/* ----- about (extends mod) ----- */
+	.#{$name} {
+  .inner {
+			border: 3px solid #494949;
+			border-bottom-width: 10px; }
+		b {
+			background-image: url(skin/about.png); }
+		.bl, .br {
+			height: 16px;
+			/*if height is set, margin set*/
+			margin-top: -16px; } } }
+
+//*
+//	can't be done w border radius */
+
+@mixin talk($name: talk) {
+	/* ----- talk (extends mod) ----- */
+	.#{$name} {
+		border: 1px solid #c7c7c7;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		.inner {
+			border: 1px solid #c7c7c7;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			border-color: #ededed; }
+		b {
+			*background-image: url(skin/talk.png); }
+		.tl {
+			left: -1px;
+			top: -1px; }
+		.tr {
+			right: -1px;
+			top: -1px; }
+		.bl {
+			left: -1px;
+			bottom: -1px; }
+		.br {
+			right: -1px;
+			bottom: -1px; } } }
+
+@mixin photo($name: photo) {
+	/* ----- photo (extends complex) ----- */
+	.#{$name} {
+		.inner {
+			border: solid 10px #fff;
+			margin: 0 4px; }
+		b {
+			background-image: url(skin/photo.png); }
+		.tr, .tl {
+			width: 20px; }
+		.top, .bottom {
+			height: 4px;
+			margin-top: 0px; }
+		.bl, .br {
+			height: 16px;
+			margin-top: -12px; } } }
+
+//*
+//	muck with margins to change how the block will align with other blocks, any value between 0-10px  */
+
+
+@mixin flow($name: flow) {
+	/* ----- flow (extends complex) ----- */
+	/* margin top = bottom height - corner height */
+	.#{$name} {
+		margin: 6px;
+		b {
+			background-image: url(skin/even.png); }
+		.inner {
+			padding: 0 4px; }
+		.top {
+			height: 4px; }
+		.bottom {
+			height: 4px;
+			margin-top: -4px; }
+		.br, .bl {
+			margin-top: -6px; } } }
+/* ----- shadow test (experimental attempt to match "flow" cross browser w no img)----- */
+
+@mixin boo($name: boo) {
+	.#{$name} {
+		-webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.33);
+		-moz-box-shadow: black 2px 2px 2px 2px;
+		/*-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;*/
+		border: solid 1px #949494;
+		background: #fff; } }
+
+/* ----- .excerpt (extends complex) ----- */
+
+@mixin excerpt($name: excerpt) {
+	/* margin top equal to - height of bottom */
+	/* margin top = bottom height - corner height */
+	.#{$name} {
+		b {
+			background-image: url(skin/excerpt.png); }
+		.top {
+			height: 1px; }
+		.bottom {
+			height: 6px;
+			margin-top: -6px; }
+		.br, .bl {
+			height: 12px;
+			margin-top: -6px; } } }
+
+
+@mixin sommers($name: sommers) {
+/* ----- sommers (extends pop) ----- */
+	.#{$name} {
+		.inner {
+			_border: 3px solid #D7D7D7;
+			background-image: url(skin/glow_7px.png);
+			_background-image: none; }
+		background-image: url(skin/glow_7px.png);
+		_background-image: none;
+		b {
+			background-image: url(skin/glow_7px.png);
+			_background-image: none; }
+		margin: 3px 20px 20px 3px; } } 
+
+@mixin gonzalo($name: gonzalo) {
+	/* ----- gonzalo ----- */
+	/*IE6 backup no alpha transparency */
+	.#{$name} {
+		background-image: url(skin/gc.png);
+		.inner, b {
+			background-image: url(skin/gc.png); } } }
+
+//
+//	====== Background blocks ====== 
+
+@mixin sale($name: sale) {
+	.#{$name} {
+		.inner {
+			background: red; } } }
+
+@mixin nicole($name: nicole) {
+	.#{$name} {
+		.inner {
+			background: #c01c41;
+			color: #fff; }
+		* {
+			color: #fff; } } }
+
+@mixin login($name: login) {
+	.#{$name} {
+		* {
+			color: #fff; } } }
+
+@mixin highlight($name: highlight) {
+	.#{$name} {
+		.inner {
+			background: #e3e36f; } } }
+
+@mixin universe($name: universe) {
+	.#{$name} {
+		.inner {
+			background: url(skin/universe.png) repeat left top; } } }
+
+@mixin foo($name: foo) {
+	.#{$name} {
+		.inner {
+			background: url(skin/universe_gray.png) repeat left top; } } }
+
+@mixin login($name: login) {
+	.#{$name} {
+		.inner {
+			background: url(skin/universe_login.png) repeat left top; } } }
+
+@mixin comment($name: comment)	{
+	.#{$name} {
+		.inner {
+			background: #e2e2e2 none; } } }
+
+//
+//	====== Block headers and footers ======
+
+@mixin hd($name: hd) {
+	.#{$name} {
+		h1, h2, h3, h4, h5, h6 {
+			padding: 5px 10px; } } }
+
+@mixin section($name: section) {
+	.#{$name} {
+		background: #e9e9e9 url(skin/header.png) repeat-x left bottom;
+		color: #de2c72;
+		font-size: 120%;
+		padding: 5px 10px;
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 100%;
+			color: #de2c72;
+			padding: 0; } } }
+
+@mixin act($name: act) {
+	.#{$name} {
+		background-color: #e9e9e9; } }
+
+@mixin topper($name: topper) {
+	.#{$name} {
+		.inner {
+		background: white url(skin/header_gradient_light.png) repeat-x left bottom;
+		color: #4D4D4D;
+		font-size: 120%;
+		padding: 5px 10px;
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 100%;
+			color: #4D4D4D;
+			padding: 0; } } } }
+
+@mixin tabPosLeft($name: tabPosLeft) {
+	.#{$name} {
+		 .topper li, .tabPosRight .topper li	{
+			background: white url(skin/header_gradient_light.png) repeat-x left bottom;
+		/* belongs in topper */ } } }
+
+@mixin tabPosBottom($name: tabPosBottom) {
+	.#{$name} {
+		.topper {
+			background-image: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#e2e2e2), to(white));
+			background-image: -moz-linear-gradient(0% 8% 270deg, #e2e2e2, white, white 77%); } } }
+
+@mixin bam($name: bam) {
+	.#{$name} {
+		background: #00477a url(skin/header_glossy.png) repeat-x left top;
+		color: #fff;
+		font-size: 120%;
+		padding: 5px 10px;
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 100%;
+			color: #fff;
+			padding: 0; } } }
+
+@mixin gonz($name: gonz) {
+	.#{$name} {
+		background: url(skin/gc_header.png) no-repeat left top; } }
+
+//
+//	messed up 
+
+@mixin online($name: online) {
+	.#{$name} {
+		background: #9a9400 url(skin/online.png) repeat-x left top;
+		color: #000;
+		font-size: 120%;
+		padding: 5px 10px;
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 100%;
+			color: #000;
+			padding: 0; } } }
+
+@mixin help($name: help) {
+	.#{$name} {
+		background: #b20029 url(skin/help.png) repeat-x left top;
+		color: #fff;
+		font-size: 120%;
+		padding: 5px 10px;
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 100%;
+			color: #fff;
+			padding: 0; } } }
+
+@mixin info($name: info) {
+	.#{$name} {
+		background: #636363 url(skin/info.png) repeat-x left top;
+		color: #fff;
+		font-size: 120%;
+		padding: 5px 10px;
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 100%;
+			color: #fff;
+			padding: 0; } } }

@@ -1,0 +1,56 @@
+.base {
+  fieldset {
+    margin: 20px 10px;
+    padding: 20px 15px 20px 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-top-color: #bbb;
+    border-bottom-color: #ddd;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  .field {
+    .input {
+      background-color: #fff;
+      input, select, textarea {
+        background-color: #fff; }
+      border: 1px solid #ccc;
+      border-top-color: #aaa;
+      border-bottom-color: #ddd; }
+    .select select {
+      border: 1px solid #ccc;
+      border-top-color: #aaa;
+      border-bottom-color: #ddd; }
+    .input {
+      padding: 1px 1px 1px 3px; }
+    .select {
+      border: 0 none;
+      padding: 0;
+      background-color: transparent; } }
+  .button {
+    background: transparent url(skin/forms/bt_base.png) no-repeat 100% 0;
+    margin: 10px;
+    padding-right: 5px;
+    &:hover {
+      background: transparent url(skin/forms/bt_base.png) no-repeat 100% 0;
+      margin: 10px;
+      padding-right: 5px; }
+    .inner {
+      background: transparent url(skin/forms/bt_base.png) no-repeat 0 -40px;
+      padding: 5px 5px 5px 10px; }
+    input.inner {
+      *background-position: 0 -38px; }
+    &.submit {
+      .inner {
+        background-position: 0 -80px;
+        padding-left: 25px; }
+      input.inner {
+        *background-position: 0 -78px; } }
+    &.cancel {
+      .inner {
+        background-position: 0 -120px;
+        padding-left: 25px; }
+      input.inner {
+        *background-position: 0 -118px; } } } }
+
+/* put icons on the wider inner part of the background image to keep sensitive area as big as possible when using inputs */

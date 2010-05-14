@@ -1,0 +1,31 @@
+OOCSS - Compass Plugin
+================================
+
+* Port of Version 0.01
+* 2010-05-14 03:44
+
+Created by Nicole Sullivan. See the official site for more info: <http://oocss.org/>
+
+---------
+
+This plugin adds the OOCSS framework to [Compass](http://compass-style.org/).
+
+Install
+=======
+manual install
+add this to your compass frame work dir in a folder named oocss
+
+gem install
+not yet soon
+
+Create a OOCSS Compass Project
+==================================
+
+    compass create my_project --using oocss
+
+
+Customizing your Grid System
+============================
+
+@TODO Paul Irish Example
+@TODO Semantic Grids

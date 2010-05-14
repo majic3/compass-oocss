@@ -1,0 +1,65 @@
+@mixin lblock($mw: 0, $f: 0) {
+  @if $mw == 0 {
+    overflow: hidden;
+    _overflow: visible;
+    _zoom: 1; }
+  @else {
+    float: $f;
+    @if $mw != 0 {
+      width: $mw; }
+    @else {
+      width: 50%; }
+    _margin-#{$f}: -3px; } }
+
+@mixin afterFix {
+  &:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0 !important;
+    line-height: 0;
+    font-size: xx-large;
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "; } }
+
+@mixin main {
+  display: table-cell;
+  *display: block;
+  width: auto; }
+
+@mixin leftCol($w: 250px) {
+  @include lblock($w, left); }
+
+@mixin rightCol($w: 300px) {
+  @include lblock($w, right); }
+
+@mixin body {
+  @include lblock; }
+
+@mixin page($width: 960px, $margin: unquote("0 auto"), $name: page) {
+  .#{$name} {
+    margin: $margin;
+    width: $width;
+    _text-align: left; } }
+
+@mixin page-liquid($w: 100%) {
+  @include page($w, unquote("0 auto"), liquid); }
+
+@mixin oocss-template($w: 960px) {
+  /*	oocss default template - mixins of these classes exist too	 */
+  body {
+    _text-align: center; }
+  @include page($w, unquote(".3em auto"), page);
+  .body, .main {
+    *zoom: 1; }
+  .body {
+    @include lblock;
+    width: 100%;
+    @include afterFix; }
+  .main {
+    @include lblock;
+    @include afterFix; }
+  .leftCol {
+    @include lblock(180px, left); }
+  .rightCol {
+    @include lblock(400px, right); } }

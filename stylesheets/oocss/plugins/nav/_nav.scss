@@ -1,0 +1,470 @@
+/* NAVIGATION & TABS */
+
+/* -------------------------------------------------------------- 
+   TABS - Starting point for turning lists into tabs. vertical / horizontal
+-------------------------------------------------------------- */
+
+.nv {
+  margin: 0;
+  padding: 0;
+  &.core {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-bottom: 2px solid #dedede;
+    .tabs {
+      padding: 0 0 0 1.614em; }
+    li {
+      float: left;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .tabs a {
+      padding: 5px 10px;
+      color: #666;
+      text-decoration: none;
+      &:hover {
+        background: #bbb;
+        color: #333; } } }
+  &.vert, &.hori {
+    border: 1px solid #dedede;
+    margin: 1.5em .614em 0.75em 1.614em;
+    padding: .5em; }
+  &.vert li a:hover, &.hori li a:hover {
+    border-color: #c1c1c1; } }
+
+.leftCol .nv.vert, .rightCol .nv.vert {
+  display: block;
+  clear: both;
+  margin-right: 1.614em; }
+
+.main .nv {
+  &.vert, &.hori {
+    display: inline-block; } }
+
+.head .nv, .foot .nv {
+  display: inline-block; }
+
+.main .nv {
+  &.vert, &.hori {
+    float: right; } }
+
+.foot .nv {
+  float: right; }
+
+.nv {
+  &.hori ul.tabs li, &.vert ul.tabs li {
+    float: left;
+    display: block;
+    list-style: none;
+    margin-left: .5em;
+    padding: .1em; }
+  &.hori ul.tabs li {
+    padding-left: .4em;
+    padding-right: .4em; }
+  &.vert ul.tabs li {
+    text-align: left; } }
+
+.leftCol .nv.vert ul.tabs li, .rightCol .nv.vert ul.tabs li {}
+
+.main .nv {
+  &.hori ul.tabs li {}
+  &.vert ul.tabs li {
+    margin-right: .5em; } }
+
+.nv {
+  &.hori ul.tabs li {
+    a {
+      float: left;
+      display: block;
+      border-bottom: 1px solid #dedede;
+      padding-left: .614em;
+      padding-right: .614em; }
+    ul {
+      clear: left;
+      float: left;
+      display: block;
+      margin-top: 0.2em;
+      margin-bottom: .5em; }
+    li {
+      float: left;
+      list-style: none;
+      margin-left: .5em;
+      padding: 0; } }
+  &.vert ul.tabs li {
+    clear: left;
+    a {
+      float: left;
+      display: block;
+      border-left: 1px solid #dedede;
+      padding-left: .614em; }
+    ul {
+      clear: left;
+      float: left;
+      display: block;
+      margin-top: .2em;
+      margin-bottom: .5em; }
+    li {
+      float: left;
+      list-style: none;
+      margin-left: .5em;
+      padding: 0; } } }
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  li {
+    ul {
+      float: left; }
+    float: left;
+    list-style: none;
+    margin: .1em 0;
+    padding: 0 .2em;
+    a {
+      float: left;
+      display: block; } }
+  display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; } }
+
+/* Clearing floats without extra markup  */
+
+* html ul.tabs {
+  height: 1%; }
+
+ul.tabs {
+  display: block;
+  li ul {
+    display: block; } }
+
+/* -------------------------------------------------------------- 
+   TREE - multi level listed navigation list. is not vertical tabs
+-------------------------------------------------------------- */
+
+.nv {
+  .tree {
+    padding: 0;
+    ul {
+      padding-top: .4em;
+      padding-bottom: 1.2em; }
+    li {
+      list-style: none;
+      margin-left: .3em;
+      margin-top: .3em;
+      padding: 0; }
+    ul li {
+      list-style: none;
+      margin-left: .05em;
+      padding: 0; }
+    li {
+      ul {
+        margin-left: .5em;
+        padding: 0; }
+      li {
+        list-style: none;
+        margin-left: .3em;
+        padding: 0; } }
+    a {
+      padding: 5px 10px;
+      color: #666;
+      text-decoration: none;
+      &:hover {
+        color: #333; } } }
+  &.crumbs {
+    height: 2.3em;
+    ul {
+      height: 2.3em; }
+    border: 1px solid #dedede;
+    margin: 1.5em 0 0.75em 0;
+    li {
+      float: left;
+      line-height: 2.3em;
+      padding-left: .75em;
+      color: #777;
+      a {
+        display: block;
+        padding: 0 15px 0 0;
+        background: url(skin/nav/crumbs.gif) no-repeat right center; } } } }
+
+/* -------------------------------------------------------------- 
+   Breadcrumb - breadcrumb links. 
+   http://veerle.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs/
+   http://www.alistapart.com/articles/taminglists/
+   http://www.fortysomething.ca/mt/etc/archives/006747.php
+-------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- 
+   Sitemap - using adapted slickmap css
+   http://astuteo.com/slickmap/ - see slickmap.css
+-------------------------------------------------------------- */
+
+body.sitemap {}
+
+	/* ------------------------------------------------------------
+	NUMBER OF COLUMNS: Adjust #primaryNav li to set the number
+	of columns required in your site map. The default is 
+	4 columns (25%). 5 columns would be 20%, 6 columns would 
+	be 16.6%, etc. 
+------------------------------------------------------------ */
+
+#primaryNav {
+  li {
+    width: 25%;
+    ul li {
+      width: 100% !important; } }
+  &.col1 li {
+    width: 99.9%; }
+  &.col2 li {
+    width: 50.0%; }
+  &.col3 li {
+    width: 33.3%; }
+  &.col4 li {
+    width: 25.0%; }
+  &.col5 li {
+    width: 20.0%; }
+  &.col6 li {
+    width: 16.6%; }
+  &.col7 li {
+    width: 14.2%; }
+  &.col8 li {
+    width: 12.5%; }
+  &.col9 li {
+    width: 11.1%; }
+  &.col10 li {
+    width: 10.0%; } }
+
+/* ------------------------------------------------------------
+	General Styles
+------------------------------------------------------------ */
+
+.sitemap {
+  .nv.sitemap {
+    margin: 0 0 40px 0;
+    float: left;
+    width: 100%; }
+  #primaryNav {
+    margin: 0;
+    float: left;
+    width: 100%;
+    #home {
+      display: block;
+      float: none;
+      background: white url('slickmap/L1-left.png') center bottom no-repeat;
+      position: relative;
+      z-index: 2;
+      padding: 0 0 30px 0; }
+    li {
+      float: left;
+      background: url('slickmap/L1-center.png') center top no-repeat;
+      padding: 30px 0;
+      margin-top: -30px;
+      a {
+        margin: 0 20px 0 0;
+        padding: 10px 0;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        background: #c3eafb url('slickmap/white-highlight.png') top left repeat-x;
+        border: 2px solid #b5d9ea;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+        /* FF 3.5+ */
+        &:hover {
+          background-color: #e2f4fd;
+          border-color: #97bdcf; } }
+      &:last-child {
+        background: url('slickmap/L1-right.png') center top no-repeat; } } }
+  .body a {
+    &:link:before, &:visited:before {
+      content: " " attr(href) " ";
+      display: block;
+      text-transform: uppercase;
+      font-size: 10px;
+      margin-bottom: 5px;
+      word-wrap: break-word; } }
+  #primaryNav li {
+    a {
+      &:link:before, &:visited:before {
+        color: #78a9c0; } }
+    li {
+      width: 100%;
+      clear: left;
+      margin-top: 0;
+      padding: 10px 0 0 0;
+      background: url('slickmap/vertical-line.png') center bottom repeat-y;
+      a {
+        background-color: #cee3ac;
+        border-color: #b8da83;
+        &:hover {
+          border-color: #94b75f;
+          background-color: #e7f1d7; } }
+      &:first-child {
+        padding-top: 30px; }
+      &:last-child {
+        background: url('slickmap/vertical-line.png') center bottom repeat-y; }
+      a {
+        &:link:before, &:visited:before {
+          color: #8faf5c; } }
+      ul {
+        margin: 10px 0 0 0;
+        width: 100%;
+        float: right;
+        padding: 9px 0 10px 0;
+        background: white url('slickmap/L3-ul-top.png') center top no-repeat; }
+      li {
+        background: url('slickmap/L3-center.png') left center no-repeat;
+        padding: 5px 0;
+        a {
+          background-color: #fff7aa;
+          border-color: #e3ca4b;
+          font-size: 12px;
+          padding: 5px 0;
+          width: 80%;
+          float: right;
+          &:hover {
+            background-color: #fffce5;
+            border-color: #d1b62c; } }
+        &:first-child {
+          padding: 15px 0 5px 0;
+          background: url('slickmap/L3-li-top.png') left center no-repeat; }
+        &:last-child {
+          background: url('slickmap/L3-bottom.png') left center no-repeat; }
+        a {
+          &:link:before, &:visited:before {
+            color: #ccae14;
+            font-size: 9px; } } } } }
+  #utilityNav {
+    float: right;
+    max-width: 50%;
+    margin-right: 10px;
+    li {
+      float: left;
+      margin-bottom: 10px;
+      a {
+        margin: 0 10px 0 0;
+        padding: 5px 10px;
+        display: block;
+        border: 2px solid #e3ca4b;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        background: #fff7aa url('slickmap/white-highlight.png') top left repeat-x;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+        /* FF 3.5+ */
+        &:hover {
+          background-color: #fffce5;
+          border-color: #d1b62c; }
+        &:link:before, &:visited:before {
+          color: #ccae14;
+          font-size: 9px;
+          margin-bottom: 3px; } } } } }
+
+/* ------------------------------------------------------------
+	Site Map Styles
+------------------------------------------------------------ */
+
+/* --------	Top Level --------- */
+
+/* --------	Second Level --------- */
+
+/* --------	Third Level --------- */
+
+/* ------------------------------------------------------------
+	Utility Navigation
+------------------------------------------------------------ */
+
+/* -------------------------------------------------------------- 
+   Pagination - forward, back & page links
+   http://woork.blogspot.com/2008/03/perfect-pagination-style-using-css.html
+-------------------------------------------------------------- */
+
+.paginate-counter {
+  float: right;
+  margin-right: 2.684em; }
+
+.paging {
+  float: left;
+  width: 60%;
+  margin-left: 2.684em;
+  margin-top: -4px;
+  li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    list-style: none;
+    margin-right: 2px; }
+  a {
+    border: solid 1px #ABABAB;
+    margin-right: 2px; }
+  .previous.disabled {
+    border: solid 1px #FFF;
+    color: #DEDEDE;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 3px 4px; }
+  .next {
+    &.disabled {
+      border: solid 1px #FFF;
+      color: #DEDEDE;
+      display: block;
+      float: left;
+      font-weight: bold;
+      margin-right: 2px;
+      padding: 3px 4px; }
+    a {
+      font-weight: bold;
+      border: solid 1px #fff; } }
+  .previous a {
+    font-weight: bold;
+    border: solid 1px #fff; }
+  .current {
+    background: #79DA65;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: block;
+    float: left;
+    padding: 4px 6px; }
+  a {
+    &:link, &:visited {
+      color: #0e509e;
+      display: block;
+      float: left;
+      padding: 3px 6px;
+      text-decoration: none;
+      border: solid 1px #fff; }
+    &:hover {
+      border: solid 1px #fff;
+      background-color: #79DA65;
+      color: #777; } } }
+
+/*
+
+	skip links - use style to insert a directional arrow
+	we may up, down, top you can then have additional skips for skip comments etc
+
+*/
+
+.skip {
+  &.up, &.down, &.top {} }
+
+/*	links that skip to down to some content of the page; can be etended for skipping up to comments etc might be same as top or should we have two or is that overkill? */
+
+/*	links that skip to down to some content of the page; can be etended for skipping down to comments etc */
+
+/*	links that skip to top of page	*/

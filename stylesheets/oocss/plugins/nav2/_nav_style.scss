@@ -1,0 +1,56 @@
+/*Gray Style*/
+
+.gray {
+  color: #FFFFFF;
+  background: #999;
+  li {
+    padding: 5px 0 0 0; }
+  a, span {
+    background: #cccccc url(../img/nav.png) no-repeat top left;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px; }
+  a {
+    color: #EAF3F8;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-width: 95px;
+    padding: 0 0 0 10px; }
+  span {
+    background-position: top right;
+    width: 10px;
+    float: right; }
+  a {
+    &:hover, &.current:hover {
+      color: #fff;
+      background-color: #888;
+      background-position: middle left; }
+    &:hover span {
+      background-color: #888;
+      background-position: middle right; }
+    &.current {
+      &:hover span {
+        background-color: #888;
+        background-position: middle right; }
+      color: #fff;
+      background-color: #279;
+      background-position: bottom left;
+      span {
+        background-color: #279;
+        background-position: bottom right; } } } }
+
+/* ---------------------- END Gray nav ---------------------- */
+
+/* ---------------------- BEGIN Blue nav ---------------------- */
+
+.blue {
+  color: #BB88DD;
+  background: #EE77DD; }
+
+/* ---------------------- END Blue nav ---------------------- */
